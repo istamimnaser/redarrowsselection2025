@@ -10,16 +10,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-
-    /* Option 1: Subtle Racing-Themed Background Image */
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
-
-    /* Option 2: Gradient Background */
-    /* background: linear-gradient(to right, #1c1c1c, #5a0000); */
-
-    /* Option 3: Dark Solid Color */
-    /* background-color: #1a1a1a; */
 }
 
 /* Header Styles */
@@ -33,19 +25,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
     max-width: 1000px;
     margin: auto;
 }
 
 .logo {
     height: 60px;
+    max-width: 100%;
 }
 
 .logo-container h1 {
     flex: 1;
     text-align: center;
     font-size: 1.8em;
-    margin: 0;
+    margin: 10px 0;
 }
 
 /* Main Content Container */
@@ -107,4 +101,22 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-container h1 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
 }
