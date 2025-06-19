@@ -120,3 +120,28 @@ footer a:hover {
         padding: 10px;
     }
 }
+#Slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Slider a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 18px;
+    background: #cb0808;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+
+#Slider a:hover,
+#Slider a:focus {
+    background: #a30606;
+    outline: none;
+}

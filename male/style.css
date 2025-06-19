@@ -1,0 +1,148 @@
+/* Base Reset and Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Body Styling with Background Options */
+body {
+    display: flex;
+    flex-direction: column;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background-color: #cb0808;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.logo {
+    height: 60px;
+    max-width: 100%;
+}
+
+.logo-container h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+/* Main Content Container */
+.leaderboard-container {
+    flex: 1 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Leaderboard Table */
+#leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#leaderboard-table th,
+#leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#leaderboard-table th {
+    background-color: #cb0808;
+    color: white;
+}
+
+#leaderboard-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#leaderboard-table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 600px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-container h1 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+
+}
+#Slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Slider a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 18px;
+    background: #cb0808;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+
+#Slider a:hover,
+#Slider a:focus {
+    background: #a30606;
+    outline: none;
+}
